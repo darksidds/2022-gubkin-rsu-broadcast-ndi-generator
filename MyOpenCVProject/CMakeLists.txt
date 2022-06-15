@@ -61,6 +61,6 @@ if(QT_VERSION_MAJOR EQUAL 6)
 endif()
 
 ##### Подключение библиотеки OpenCV #####
-find_package(OpenCV REQUIRED)
+find_package(OpenCV CONFIG REQUIRED)
 target_link_libraries(MyOpenCVProject PRIVATE ${OpenCV_LIBS})
 include_directories(${OpenCV_INCLUDE_DIRS})
